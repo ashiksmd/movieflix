@@ -14,6 +14,12 @@
 .poster {
     height: 90%;
     overflow: hidden;
+    transition: all 0.5s ease;
+}
+
+.poster:hover {
+    overflow: visible;
+    transform: scale(1.25);
 }
 
 .movie img {
@@ -36,4 +42,24 @@
 
 .pager li > a:focus {
     background-color: black;
+}
+
+.movie-details {
+    position: fixed;
+    left: 10em;
+    right: 20em;
+    top: 20em;
+    height: auto;
+    padding: 1em;
+    background-color: rgba(0, 0, 0, 0.71);
+    display: none;
+}
+
+.movie-details.enabled {
+    display: block;
+}
+
+.movie-details .glyphicon {
+    float: right;
+    cursor: pointer;
 }

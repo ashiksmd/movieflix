@@ -4,6 +4,7 @@ app.controller('catalogCtrl', function($scope, $http) {
 
     $scope.data = [];
     $scope.page = 1;
+    $scope.enableDetails = "";
 
     // Enable/Disable Prev nav button
     $scope.allowPrev = function() {
@@ -49,6 +50,18 @@ app.controller('catalogCtrl', function($scope, $http) {
             $scope.page++;
             $scope.showPage();
         }
+    }
+
+    // Show details of the movie in a floating panel
+    $scope.showDetails = function(movie) {
+        $scope.selectedMovie = movie;
+        $scope.enableDetails = "enabled";
+
+    }
+
+    // Hide the details view
+    $scope.closeDetails = function() {
+        $scope.enableDetails = "";
     }
 
     // Retrieve a list of movies to be displayed

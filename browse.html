@@ -33,10 +33,21 @@
             <div class="catalog">
                     <div ng-repeat="movie in movielist" class="movie">
                         <div class="poster">
-                            <img src="{{movie.Poster}}" alt="{{movie.Title}}"/>
+                            <img src="{{movie.Poster}}" alt="{{movie.Title}}" ng-click="showDetails(movie)"/>
                         </div>
                         <div>{{movie.Title}} ({{movie.Year}})</div>
                     </div>
+            </div>
+
+            <div class="movie-details alert alert-dismissible {{enableDetails}}">
+                <span class="glyphicon glyphicon-remove" ng-click="closeDetails()"></span>
+                <h2>{{selectedMovie.Title}} ({{selectedMovie.Year}})</h2>
+                <div>{{selectedMovie.Runtime}}</div>
+                <div>{{selectedMovie.Genre}}</div>
+                <div>Directed by: {{selectedMovie.Director}}</div>
+                <div>Starring {{selectedMovie.Actors}}</div>
+                <div>{{selectedMovie.Plot}}</div>
+                <div><a href="http://www.imdb.com/title/{{selectedMovie.imdbID}}/">IMDb Rating: {{selectedMovie.imdbRating}}</a></div>
             </div>
         </div>
         <script src="js/browse.js"></script>
