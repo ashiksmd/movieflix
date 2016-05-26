@@ -2,6 +2,7 @@
 <html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="utf-8">
         <title>MovieFlix - Catalog</title>
 
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
@@ -65,11 +66,24 @@
             <div class="movie-details alert alert-dismissible {{enableDetails}}">
                 <span class="glyphicon glyphicon-remove" ng-click="closeDetails()"></span>
                 <h2>{{selectedMovie.Title}} ({{selectedMovie.Year}})</h2>
+                 <span class="starRating">
+                    <input id="rating5" type="radio" name="rating" value="5">
+                    <label for="rating5">5</label>
+                    <input id="rating4" type="radio" name="rating" value="4">
+                    <label for="rating4">4</label>
+                    <input id="rating3" type="radio" name="rating" value="3" checked>
+                    <label for="rating3">3</label>
+                    <input id="rating2" type="radio" name="rating" value="2">
+                    <label for="rating2">2</label>
+                    <input id="rating1" type="radio" name="rating" value="1">
+                    <label for="rating1">1</label>
+                </span>
                 <div>{{selectedMovie.Runtime}}</div>
                 <div>{{selectedMovie.Genre}}</div>
                 <div>Directed by: {{selectedMovie.Director}}</div>
                 <div>Starring {{selectedMovie.Actors}}</div>
                 <div>{{selectedMovie.Plot}}</div>
+                <div>MovieFlix Rating: {{selectedMovie.MovieFlixRating}}</div>
                 <div><a href="http://www.imdb.com/title/{{selectedMovie.imdbID}}/">IMDb Rating: {{selectedMovie.imdbRating}}</a></div>
             </div>
         </div>
