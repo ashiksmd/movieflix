@@ -29,6 +29,7 @@
 .pager li>a, .pager li>span {
     background-color: black;
     color: white;
+    margin: 1em;
 
 }
 
@@ -62,4 +63,20 @@
 .movie-details .glyphicon {
     float: right;
     cursor: pointer;
+}
+
+.btn {
+    padding: 0em;
+}
+.btn-primary {
+    background-color: #060606;
+    border: none;
+}
+
+.btn-group button:hover, .open>.dropdown-toggle.btn-primary:focus, .open>.dropdown-toggle.btn-primary:hover {
+    background-color: #4c4c4c;
+}
+
+header .btn-group button {
+    height: 100%;
 }

@@ -13,6 +13,24 @@ header div {
     padding: 1em;
 }
 
+header .search {
+    float: right;
+    padding: 0;
+    margin-top: 0.25em;
+}
+
+header .search:before {
+    margin-top: 0.5em;
+    position: absolute;
+    right: 0.5em;
+}
+
+header .search input {
+    width: 20em;
+    height: 2em;
+    background-color: black;
+}
+
 header .user {
     float: right;
 }
@@ -20,5 +38,9 @@ header .user {
 .logo {
     color: red;
     font-weight: bold;
+}
 
+header .browse span:hover, header .user a:hover {
+    background-color: #4c4c4c;
+    cursor: pointer;
 }

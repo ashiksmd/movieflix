@@ -1,4 +1,4 @@
-var app = angular.module('catalog', []);
+var app = angular.module('catalog', ['ui.bootstrap']);
 app.controller('catalogCtrl', function($scope, $http) {
     var pageSize = 12;
 

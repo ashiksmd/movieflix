@@ -2,24 +2,47 @@
 <html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>MovieFlix - Sign in</title>
+        <title>MovieFlix - Catalog</title>
 
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
         <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+        <script src="//angular-ui.github.io/bootstrap/ui-bootstrap-tpls-1.3.3.js"></script>
 
         <link rel="stylesheet" href="css/styles.css">
         <link rel="stylesheet" href="css/browse.css">
 
     </head>
 
-    <body>
+    <body ng-app="catalog" ng-controller="catalogCtrl">
         <header>
             <div class="logo">MOVIEFLIX</div>
-            <div class="browse">Browse</div>
+            <div class="btn-group" uib-dropdown>
+                <button id="btn-browse" type="button" class="btn btn-primary" uib-dropdown-toggle>
+                    Browse <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" uib-dropdown-menu role="menu" aria-labelledby="btn-append-to-single-button">
+                    <li role="menuitem"><a href="#">Movies</a></li>
+                    <li role="menuitem"><a href="#">TV Series</a></li>
+                    <li class="divider"></li>
+                    <li role="menuitem"><a href="#">Top Rated Movies</a></li>
+                    <li role="menuitem"><a href="#">Top Rated TV Series</a></li>
+                </ul>
+            </div>
+            <div class="btn-group" uib-dropdown>
+                <button id="btn-sort" type="button" class="btn btn-primary" uib-dropdown-toggle>
+                    Sort <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" uib-dropdown-menu role="menu" aria-labelledby="btn-append-to-single-button">
+                    <li role="menuitem"><a href="#">IMDb Rating</a></li>
+                    <li role="menuitem"><a href="#">Year</a></li>
+                    <li role="menuitem"><a href="#">IMDb Votes</a></li>
+                </ul>
+            </div>
             <div class="user"><a href="signin.html">Log out</a></div>
+            <div class="search glyphicon glyphicon-search"><input type="search" placeholder="Search Titles, Genres, Years"/></div>
         </header>
 
-        <div ng-app="catalog" ng-controller="catalogCtrl">
+        <div>
             <nav>
                 <ul class="pager">
                     <li class="previous {{allowPrev()}}">
@@ -31,12 +54,12 @@
                 </ul>
             </nav>
             <div class="catalog">
-                    <div ng-repeat="movie in movielist" class="movie">
-                        <div class="poster">
-                            <img src="{{movie.Poster}}" alt="{{movie.Title}}" ng-click="showDetails(movie)"/>
-                        </div>
-                        <div>{{movie.Title}} ({{movie.Year}})</div>
+                <div ng-repeat="movie in movielist" class="movie">
+                    <div class="poster">
+                        <img src="{{movie.Poster}}" alt="{{movie.Title}}" ng-click="showDetails(movie)"/>
                     </div>
+                    <div>{{movie.Title}} ({{movie.Year}})</div>
+                </div>
             </div>
 
             <div class="movie-details alert alert-dismissible {{enableDetails}}">
