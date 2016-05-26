@@ -1,3 +1,9 @@
+.catalog {
+    margin-left: 3em;
+    margin-right: 3em;
+    padding: 1em;
+}
+
 .movie {
     height: 20em;
     width: 20em;
