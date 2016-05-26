@@ -19,3 +19,21 @@
 .movie img {
     width:100%;
 }
+
+.pager li>a, .pager li>span {
+    background-color: black;
+    color: white;
+
+}
+
+.pager .disabled>a, .pager .disabled>a:focus, .pager .disabled>a:hover, .pager .disabled>span {
+    background-color: black;
+}
+
+.pager li>a:hover {
+    background-color: gray;
+}
+
+.pager li > a:focus {
+    background-color: black;
+}

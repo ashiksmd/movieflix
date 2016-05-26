@@ -19,13 +19,25 @@
             <div class="user"><a href="signin.html">Log out</a></div>
         </header>
 
-        <div ng-app="catalog" ng-controller="catalogCtrl" class="catalog">
-                <div ng-repeat="movie in movielist" class="movie">
-                    <div class="poster">
-                        <img src="{{movie.Poster}}"/>
+        <div ng-app="catalog" ng-controller="catalogCtrl">
+            <nav>
+                <ul class="pager">
+                    <li class="previous {{allowPrev()}}">
+                        <a href="#" ng-click="gotoPrev()"><span aria-hidden="true">&larr;</span> Prev</a>
+                    </li>
+                    <li class="next {{allowNext()}}">
+                        <a href="#" ng-click="gotoNext()">Next <span aria-hidden="true">&rarr;</span></a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="catalog">
+                    <div ng-repeat="movie in movielist" class="movie">
+                        <div class="poster">
+                            <img src="{{movie.Poster}}" alt="{{movie.Title}}"/>
+                        </div>
+                        <div>{{movie.Title}} ({{movie.Year}})</div>
                     </div>
-                    <div>{{movie.Title}} ({{movie.Year}})</div>
-                </div>
+            </div>
         </div>
         <script src="js/browse.js"></script>
     </body>
