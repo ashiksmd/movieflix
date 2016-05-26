@@ -1,0 +1,15 @@
+.movie {
+    height: 20em;
+    width: 20em;
+    float: left;
+    padding: 1em;
+}
+
+.poster {
+    height: 90%;
+    overflow: hidden;
+}
+
+.movie img {
+    width:100%;
+}
