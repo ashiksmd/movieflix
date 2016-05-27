@@ -991,7 +991,7 @@
   },
   {
     "Title": "The X-Files",
-    "Year": "1993â€“2002",
+    "Year": "1993-2002",
     "Rated": "TV-MA",
     "Released": "10 Sep 1993",
     "Runtime": "44 min",
@@ -1013,7 +1013,7 @@
   },
   {
     "Title": "Game of Thrones",
-    "Year": "2011â€“",
+    "Year": "2011-",
     "Rated": "TV-MA",
     "Released": "17 Apr 2011",
     "Runtime": "56 min",
@@ -1035,7 +1035,7 @@
   },
   {
     "Title": "The Walking Dead",
-    "Year": "2010â€“",
+    "Year": "2010-",
     "Rated": "TV-14",
     "Released": "31 Oct 2010",
     "Runtime": "44 min",
@@ -1057,7 +1057,7 @@
   },
   {
     "Title": "The Big Bang Theory",
-    "Year": "2007â€“",
+    "Year": "2007-",
     "Rated": "TV-14",
     "Released": "24 Sep 2007",
     "Runtime": "22 min",
@@ -1079,7 +1079,7 @@
   },
   {
     "Title": "Sherlock",
-    "Year": "2010â€“",
+    "Year": "2010-",
     "Rated": "TV-14",
     "Released": "24 Oct 2010",
     "Runtime": "88 min",
@@ -1101,7 +1101,7 @@
   },
   {
     "Title": "Breaking Bad",
-    "Year": "2008â€“2013",
+    "Year": "2008-2013",
     "Rated": "TV-14",
     "Released": "20 Jan 2008",
     "Runtime": "47 min",
@@ -1123,7 +1123,7 @@
   },
   {
     "Title": "The Vampire Diaries",
-    "Year": "2009â€“",
+    "Year": "2009-",
     "Rated": "TV-14",
     "Released": "10 Sep 2009",
     "Runtime": "43 min",
@@ -1145,7 +1145,7 @@
   },
   {
     "Title": "Friends",
-    "Year": "1994â€“2004",
+    "Year": "1994-2004",
     "Rated": "TV-14",
     "Released": "22 Sep 1994",
     "Runtime": "22 min",
@@ -1167,7 +1167,7 @@
   },
   {
     "Title": "Orange Is the New Black",
-    "Year": "2013â€“",
+    "Year": "2013-",
     "Rated": "TV-MA",
     "Released": "11 Jul 2013",
     "Runtime": "59 min",
@@ -1189,7 +1189,7 @@
   },
   {
     "Title": "Modern Family",
-    "Year": "2009â€“",
+    "Year": "2009-",
     "Rated": "TV-PG",
     "Released": "23 Sep 2009",
     "Runtime": "22 min",
@@ -1211,7 +1211,7 @@
   },
   {
     "Title": "House of Cards",
-    "Year": "2013â€“",
+    "Year": "2013-",
     "Rated": "TV-MA",
     "Released": "01 Feb 2013",
     "Runtime": "51 min",
@@ -1233,7 +1233,7 @@
   },
   {
     "Title": "Narcos",
-    "Year": "2015â€“",
+    "Year": "2015-",
     "Rated": "TV-MA",
     "Released": "28 Aug 2015",
     "Runtime": "49 min",
@@ -1255,7 +1255,7 @@
   },
   {
     "Title": "Homeland",
-    "Year": "2011â€“",
+    "Year": "2011-",
     "Rated": "TV-MA",
     "Released": "02 Oct 2011",
     "Runtime": "55 min",
@@ -1277,7 +1277,7 @@
   },
   {
     "Title": "The Office",
-    "Year": "2005â€“2013",
+    "Year": "2005-2013",
     "Rated": "TV-PG",
     "Released": "24 Mar 2005",
     "Runtime": "22 min",
@@ -1299,7 +1299,7 @@
   },
   {
     "Title": "NCIS",
-    "Year": "2003â€“",
+    "Year": "2003-",
     "Rated": "TV-14",
     "Released": "23 Sep 2003",
     "Runtime": "60 min",
@@ -1321,7 +1321,7 @@
   },
   {
     "Title": "Prison Break",
-    "Year": "2005â€“2009",
+    "Year": "2005-2009",
     "Rated": "TV-14",
     "Released": "29 Aug 2005",
     "Runtime": "44 min",
@@ -1343,7 +1343,7 @@
   },
   {
     "Title": "How I Met Your Mother",
-    "Year": "2005â€“2014",
+    "Year": "2005-2014",
     "Rated": "TV-14",
     "Released": "19 Sep 2005",
     "Runtime": "22 min",
@@ -1365,7 +1365,7 @@
   },
   {
     "Title": "Lost",
-    "Year": "2004â€“2010",
+    "Year": "2004-2010",
     "Rated": "TV-14",
     "Released": "22 Sep 2004",
     "Runtime": "44 min",
@@ -1387,7 +1387,7 @@
   },
   {
     "Title": "True Detective",
-    "Year": "2014â€“",
+    "Year": "2014-",
     "Rated": "TV-MA",
     "Released": "12 Jan 2014",
     "Runtime": "55 min",
@@ -1409,7 +1409,7 @@
   },
   {
     "Title": "Hawaii Five-0",
-    "Year": "2010â€“",
+    "Year": "2010-",
     "Rated": "TV-14",
     "Released": "20 Sep 2010",
     "Runtime": "42 min",
@@ -1453,7 +1453,7 @@
   },
   {
     "Title": "Last Week Tonight with John Oliver",
-    "Year": "2014â€“",
+    "Year": "2014-",
     "Rated": "TV-MA",
     "Released": "27 Apr 2014",
     "Runtime": "30 min",
@@ -1475,7 +1475,7 @@
   },
   {
     "Title": "The Daily Show",
-    "Year": "1996â€“",
+    "Year": "1996-",
     "Rated": "TV-14",
     "Released": "22 Jul 1996",
     "Runtime": "30 min",
@@ -1497,7 +1497,7 @@
   },
   {
     "Title": "House M.D.",
-    "Year": "2004â€“2012",
+    "Year": "2004-2012",
     "Rated": "TV-14",
     "Released": "16 Nov 2004",
     "Runtime": "44 min",
@@ -1519,7 +1519,7 @@
   },
   {
     "Title": "The Colbert Report",
-    "Year": "2005â€“2015",
+    "Year": "2005-2015",
     "Rated": "TV-14",
     "Released": "17 Oct 2005",
     "Runtime": "30 min",
@@ -1541,7 +1541,7 @@
   },
   {
     "Title": "The Newsroom",
-    "Year": "2012â€“2014",
+    "Year": "2012-2014",
     "Rated": "TV-MA",
     "Released": "24 Jun 2012",
     "Runtime": "55 min",
@@ -1563,7 +1563,7 @@
   },
   {
     "Title": "Top Gear",
-    "Year": "2002â€“",
+    "Year": "2002-",
     "Rated": "N/A",
     "Released": "20 Oct 2002",
     "Runtime": "60 min",
