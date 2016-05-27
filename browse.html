@@ -11,7 +11,6 @@
 
         <link rel="stylesheet" href="css/styles.css">
         <link rel="stylesheet" href="css/browse.css">
-
     </head>
 
     <body ng-app="catalog" ng-controller="catalogCtrl">
@@ -67,15 +66,15 @@
                 <span class="glyphicon glyphicon-remove" ng-click="closeDetails()"></span>
                 <h2>{{selectedMovie.Title}} ({{selectedMovie.Year}})</h2>
                  <span class="starRating">
-                    <input id="rating5" type="radio" name="rating" value="5">
+                    <input id="rating5" type="radio" name="rating" value="5" ng-model="selectedMovie.MovieFlixRating">
                     <label for="rating5">5</label>
-                    <input id="rating4" type="radio" name="rating" value="4">
+                    <input id="rating4" type="radio" name="rating" value="4" ng-model="selectedMovie.MovieFlixRating">
                     <label for="rating4">4</label>
-                    <input id="rating3" type="radio" name="rating" value="3" checked>
+                    <input id="rating3" type="radio" name="rating" value="3" ng-model="selectedMovie.MovieFlixRating">
                     <label for="rating3">3</label>
-                    <input id="rating2" type="radio" name="rating" value="2">
+                    <input id="rating2" type="radio" name="rating" value="2" ng-model="selectedMovie.MovieFlixRating">
                     <label for="rating2">2</label>
-                    <input id="rating1" type="radio" name="rating" value="1">
+                    <input id="rating1" type="radio" name="rating" value="1" ng-model="selectedMovie.MovieFlixRating">
                     <label for="rating1">1</label>
                 </span>
                 <div>{{selectedMovie.Runtime}}</div>
@@ -85,6 +84,7 @@
                 <div>{{selectedMovie.Plot}}</div>
                 <div>MovieFlix Rating: {{selectedMovie.MovieFlixRating}}</div>
                 <div><a href="http://www.imdb.com/title/{{selectedMovie.imdbID}}/">IMDb Rating: {{selectedMovie.imdbRating}}</a></div>
+                <div><a href="comments.html">Comments/Reviews</a></div>
             </div>
         </div>
         <script src="js/browse.js"></script>
