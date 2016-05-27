@@ -1,7 +1,8 @@
 var app = angular.module('catalog', ['ui.bootstrap']);
-app.controller('catalogCtrl', function($scope, $http) {
+app.controller('catalogCtrl', function($scope, $http, $location) {
     var pageSize = 12;
 
+    $scope.isAdmin = $location.search().admin ? "enabled": "";
     $scope.data = [];
     $scope.page = 1;
     $scope.enableDetails = "";

@@ -64,3 +64,17 @@
     float: right;
     cursor: pointer;
 }
+
+.admin-actions {
+    display: none;
+}
+
+.admin-actions.enabled {
+    display: block;
+}
+
+.admin-actions a {
+    background-color: black;
+    padding: 0.5em;
+    color: white;
+}

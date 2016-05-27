@@ -21,11 +21,11 @@
                     Browse <span class="caret"></span>
                 </button>
                 <ul class="dropdown-menu" uib-dropdown-menu role="menu" aria-labelledby="btn-append-to-single-button">
-                    <li role="menuitem"><a href="#">Movies</a></li>
-                    <li role="menuitem"><a href="#">TV Series</a></li>
+                    <li role="menuitem"><a href="browse.html">Movies</a></li>
+                    <li role="menuitem"><a href="browse.html">TV Series</a></li>
                     <li class="divider"></li>
-                    <li role="menuitem"><a href="#">Top Rated Movies</a></li>
-                    <li role="menuitem"><a href="#">Top Rated TV Series</a></li>
+                    <li role="menuitem"><a href="browse.html">Top Rated Movies</a></li>
+                    <li role="menuitem"><a href="browse.html">Top Rated TV Series</a></li>
                 </ul>
             </div>
             <div class="btn-group" uib-dropdown>
@@ -33,9 +33,9 @@
                     Sort <span class="caret"></span>
                 </button>
                 <ul class="dropdown-menu" uib-dropdown-menu role="menu" aria-labelledby="btn-append-to-single-button">
-                    <li role="menuitem"><a href="#">IMDb Rating</a></li>
-                    <li role="menuitem"><a href="#">Year</a></li>
-                    <li role="menuitem"><a href="#">IMDb Votes</a></li>
+                    <li role="menuitem"><a href="browse.html">IMDb Rating</a></li>
+                    <li role="menuitem"><a href="browse.html">Year</a></li>
+                    <li role="menuitem"><a href="browse.html">IMDb Votes</a></li>
                 </ul>
             </div>
             <div class="user"><a href="signin.html">Log out</a></div>
@@ -85,6 +85,10 @@
                 <div>MovieFlix Rating: {{selectedMovie.MovieFlixRating}}</div>
                 <div><a href="http://www.imdb.com/title/{{selectedMovie.imdbID}}/">IMDb Rating: {{selectedMovie.imdbRating}}</a></div>
                 <div><a href="comments.html">Comments/Reviews</a></div>
+                <div class="admin-actions {{isAdmin}}">
+                    <a href="admin.html#?imdbID={{selectedMovie.imdbID}}" class="btn btn-default">Edit</a>
+                    <a href="#" class="btn btn-default">Delete</a>
+                </div>
             </div>
         </div>
         <script src="js/browse.js"></script>

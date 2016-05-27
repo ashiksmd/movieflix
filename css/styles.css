@@ -48,6 +48,7 @@ header .browse span:hover, header .user a:hover {
 .btn {
     padding: 0em;
 }
+
 .btn-primary {
     background-color: #060606;
     border: none;
@@ -100,3 +101,8 @@ header .btn-group button {
     opacity : 1;
 }
 
+.container button {
+    padding: 0.5em;
+    background-color: black;
+    color: white;
+}
