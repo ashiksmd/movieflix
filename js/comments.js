@@ -1,12 +1,15 @@
 (function() {
     'use strict';
     
-    var app = angular.module('comments', ['ui.bootstrap']);
-    app.controller('commentsCtrl', function($scope, $http) {
+    var app = angular.module('comments', ['ui.bootstrap', 'service']);
+    app.controller('commentsCtrl', function($scope, $http, CatalogService) {
         $scope.comments = [];
 
-        $http.get("data/comments.json").then(function (response) {
-            $scope.comments = response.data;
-        });
+        CatalogService.getComments()
+            .then(function(comments) {
+                $scope.comments = comments;
+            }, function(err) {
+                console.log(err);
+            })
     });
 })();

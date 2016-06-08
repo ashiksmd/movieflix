@@ -1,8 +1,8 @@
 (function() {
     'use strict';
     
-    var app = angular.module('catalog', ['ui.bootstrap']);
-    app.controller('catalogCtrl', function($scope, $http, $location) {
+    var app = angular.module('catalog', ['ui.bootstrap', 'service']);
+    app.controller('catalogCtrl', function($scope, $http, $location, CatalogService) {
         var pageSize = 12;
 
         $scope.isAdmin = $location.search().admin ? "enabled": "";
@@ -69,9 +69,12 @@
         }
 
         // Retrieve a list of movies to be displayed
-        $http.get("data/movielist.json").then(function (response) {
-            $scope.data = response.data;
-            $scope.showPage();
-        });
+        CatalogService.getMovieList()
+            .then(function (movielist) {
+                $scope.data = movielist;
+                $scope.showPage();
+            }, function(err) {
+                console.log(err);
+            });
     });
 })();
