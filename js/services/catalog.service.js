@@ -1,7 +1,7 @@
 (function() {
 
 
-    angular.module('service', [])
+    angular.module('CatalogService', [])
         .service('CatalogService', CatalogService);
 
 
