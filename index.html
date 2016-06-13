@@ -20,11 +20,11 @@
                 Browse <span class="caret"></span>
             </button>
             <ul class="dropdown-menu" uib-dropdown-menu role="menu" aria-labelledby="btn-append-to-single-button">
-                <li role="menuitem"><a href="#/browse">Movies</a></li>
-                <li role="menuitem"><a href="#/browse">TV Series</a></li>
+                <li role="menuitem"><a ng-href="#/browse/movie/{{orderBy}}">Movies</a></li>
+                <li role="menuitem"><a ng-href="#/browse/series/{{orderBy}}">TV Series</a></li>
                 <li class="divider"></li>
-                <li role="menuitem"><a href="#/browse">Top Rated Movies</a></li>
-                <li role="menuitem"><a href="#/browse">Top Rated TV Series</a></li>
+                <li role="menuitem"><a ng-href="#/browse/movie/imdbRating">Top Rated Movies</a></li>
+                <li role="menuitem"><a ng-href="#/browse/series/imdbRating">Top Rated TV Series</a></li>
             </ul>
         </div>
         <div class="btn-group" uib-dropdown>
@@ -32,13 +32,15 @@
                 Sort <span class="caret"></span>
             </button>
             <ul class="dropdown-menu" uib-dropdown-menu role="menu" aria-labelledby="btn-append-to-single-button">
-                <li role="menuitem"><a href="#/browse">IMDb Rating</a></li>
-                <li role="menuitem"><a href="#/browse">Year</a></li>
-                <li role="menuitem"><a href="#/browse">IMDb Votes</a></li>
+                <li role="menuitem"><a ng-href="#/browse/{{category}}/imdbRating">IMDb Rating</a></li>
+                <li role="menuitem"><a ng-href="#/browse/{{category}}/Year">Year</a></li>
+                <li role="menuitem"><a ng-href="#/browse/{{category}}/imdbVotes">IMDb Votes</a></li>
             </ul>
         </div>
         <div class="user" ng-if="isLoggedIn"><a href="#/signin">Log out</a></div>
-        <div class="search glyphicon glyphicon-search"><input type="search" placeholder="Search Titles, Genres, Years"/></div>
+        <div class="search glyphicon glyphicon-search">
+            <input type="search" placeholder="Search Titles, Genres, Years" ng-model="searchQuery"/>
+        </div>
     </header>
 
     <div ng-view>

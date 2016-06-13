@@ -13,6 +13,14 @@
                 templateUrl: "views/browse.tmpl.html",
                 controller: "BrowseCtrl",
                 controllerAs: "bCtrl"
+            }).when("/browse/:category/", {
+                templateUrl: "views/browse.tmpl.html",
+                controller: "BrowseCtrl",
+                controllerAs: "bCtrl"
+            }).when("/browse/:category/:orderBy", {
+                templateUrl: "views/browse.tmpl.html",
+                controller: "BrowseCtrl",
+                controllerAs: "bCtrl"
             }).when("/comments", {
                 templateUrl: "views/comments.tmpl.html",
                 controller: "CommentsCtrl",

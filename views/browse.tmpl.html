@@ -1,16 +1,16 @@
 <div>
     <nav>
         <ul class="pager">
-            <li class="previous" ng-class="{'disabled': bCtrl.page == 1}">
+            <li class="previous" ng-class="{'disabled': bCtrl.page == 0}">
                 <a ng-click="bCtrl.gotoPrev()"><span aria-hidden="true">&larr;</span> Prev</a>
             </li>
-            <li class="next" ng-class="{'disabled': bCtrl.page == bCtrl.numPages}">
+            <li class="next" ng-class="{'disabled': bCtrl.page == bCtrl.pagedData.length - 1}">
                 <a ng-click="bCtrl.gotoNext()">Next <span aria-hidden="true">&rarr;</span></a>
             </li>
         </ul>
     </nav>
     <div class="catalog">
-        <div ng-repeat="movie in bCtrl.movielist" class="movie">
+        <div ng-repeat="movie in bCtrl.pagedData[bCtrl.page]" class="movie">
             <div class="poster">
                 <img ng-src="{{movie.Poster}}" alt="{{movie.Title}}" ng-click="bCtrl.showDetails(movie)"/>
             </div>
