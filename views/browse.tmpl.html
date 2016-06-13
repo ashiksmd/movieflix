@@ -42,7 +42,7 @@
         <div><a ng-href="http://www.imdb.com/title/{{bCtrl.selectedMovie.imdbID}}/">IMDb Rating: {{bCtrl.selectedMovie.imdbRating}}</a></div>
         <div><a href="#/comments">Comments/Reviews</a></div>
         <div class="admin-actions" ng-show="bCtrl.isAdmin">
-            <a ng-href="admin.html#?imdbID={{bCtrl.selectedMovie.imdbID}}" class="btn btn-default">Edit</a>
+            <a ng-href="#/edit-movie/{{bCtrl.selectedMovie.imdbID}}" class="btn btn-default">Edit</a>
             <a class="btn btn-default">Delete</a>
         </div>
     </div>

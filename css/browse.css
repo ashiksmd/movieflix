@@ -26,11 +26,14 @@
     width:100%;
 }
 
+.pager li {
+    cursor: pointer;
+}
+
 .pager li>a, .pager li>span {
     background-color: black;
     color: white;
     margin: 1em;
-
 }
 
 .pager .disabled>a, .pager .disabled>a:focus, .pager .disabled>a:hover, .pager .disabled>span {
@@ -53,24 +56,11 @@
     height: auto;
     padding: 1em;
     background-color: rgba(0, 0, 0, 0.71);
-    display: none;
-}
-
-.movie-details.enabled {
-    display: block;
 }
 
 .movie-details .glyphicon {
     float: right;
     cursor: pointer;
-}
-
-.admin-actions {
-    display: none;
-}
-
-.admin-actions.enabled {
-    display: block;
 }
 
 .admin-actions a {
