@@ -63,7 +63,7 @@
 
         function filterResults() {
             // Filter matching items
-            var filteredItems = $filter('filter')(bCtrl.data, function (item) {
+            var filteredItems = $filter("filter")(bCtrl.data, function (item) {
                 if ($rootScope.category != "" && item.Type != $rootScope.category) return false;
 
                 for(var attr in item) {
@@ -74,8 +74,8 @@
             });
 
             // Take care of the sorting order
-            if ($rootScope.orderBy !== '') {
-                filteredItems = $filter('orderBy')(filteredItems, $rootScope.orderBy);
+            if ($rootScope.orderBy !== "") {
+                filteredItems = $filter("orderBy")(filteredItems, $rootScope.orderBy);
             }
 
             bCtrl.page = 0;

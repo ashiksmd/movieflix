@@ -79,16 +79,16 @@ header .btn-group button {
     display         : block;
     float           : right;
     position        : relative;
-    background      : url('../img/star-off.png');
+    background      : url("../img/star-off.png");
     background-size : contain;
 }
 
 .starRating:not(old) > label:before{
-    content         : '';
+    content         : "";
     display         : block;
     width           : 1.5em;
     height          : 1.5em;
-    background      : url('../img/star-on.png');
+    background      : url("../img/star-on.png");
     background-size : contain;
     opacity         : 0;
     transition      : opacity 0.2s linear;

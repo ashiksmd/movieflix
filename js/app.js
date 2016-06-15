@@ -1,7 +1,7 @@
 (function() {
     "use strict";
 
-    angular.module("movieflix", ["ngRoute", "ui.bootstrap", "CatalogService", "SessionService"]).config(moduleConfig).run(runConfig);
+    angular.module("movieflix", ["ngRoute", "ui.bootstrap"]).config(moduleConfig).run(runConfig);
 
     function moduleConfig($routeProvider) {
         $routeProvider

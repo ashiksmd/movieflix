@@ -1,7 +1,7 @@
 (function() {
 
-    angular.module('SessionService', [])
-        .service('SessionService', SessionService);
+    angular.module("movieflix")
+        .service("SessionService", SessionService);
 
 
     function SessionService() {

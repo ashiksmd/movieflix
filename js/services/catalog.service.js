@@ -1,7 +1,7 @@
 (function() {
 
-    angular.module('CatalogService', [])
-        .service('CatalogService', CatalogService);
+    angular.module("movieflix")
+        .service("CatalogService", CatalogService);
 
 
     function CatalogService($http, $q) {
