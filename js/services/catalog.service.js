@@ -9,7 +9,8 @@
         service.getMovieList = getMovieList;
         service.getMovieByID = getMovieByID;
         service.getComments = getComments;
-        
+        service.addComment = addComment;
+
         function getMovieList() {
             var deferred = $q.defer();
 
@@ -61,6 +62,14 @@
                 });
 
             return deferred.promise;
+        }
+
+        function addComment(imdbID, rating, text) {
+            //Should send to server when the component becomes available
+            return $q.when({
+                rating: rating,
+                text: text
+            });
         }
 
     }

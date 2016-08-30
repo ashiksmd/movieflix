@@ -101,7 +101,7 @@ header .btn-group button {
     opacity : 1;
 }
 
-.container button {
+button {
     padding: 0.5em;
     background-color: black;
     color: white;

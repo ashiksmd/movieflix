@@ -1,7 +1,7 @@
 (function() {
     "use strict";
 
-    angular.module("movieflix", ["ngRoute", "ui.bootstrap"]).config(moduleConfig).run(runConfig);
+    angular.module("movieflix", ["mfRating", "ngRoute", "ui.bootstrap"]).config(moduleConfig).run(runConfig);
 
     function moduleConfig($routeProvider) {
         $routeProvider
@@ -21,7 +21,7 @@
                 templateUrl: "views/browse.tmpl.html",
                 controller: "BrowseCtrl",
                 controllerAs: "bCtrl"
-            }).when("/comments", {
+            }).when("/comments/:imdbID", {
                 templateUrl: "views/comments.tmpl.html",
                 controller: "CommentsCtrl",
                 controllerAs: "cCtrl"
@@ -60,7 +60,7 @@
                 // Does user have admin privileges?
                 if (!SessionService.isAdmin()) {
                     //If not an admin, stay wherever you are
-                    alert("Error! You do not have admin access.")
+                    alert("Error! You do not have admin access.");
                     event.preventDefault();
                 }
             }

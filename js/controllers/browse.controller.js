@@ -25,6 +25,7 @@
         bCtrl.gotoNext = gotoNext;
         bCtrl.showDetails = showDetails;
         bCtrl.hideDetails = hideDetails;
+        bCtrl.rateMovie = rateMovie;
 
         //Allow admin actions
         bCtrl.isAdmin = SessionService.isAdmin();
@@ -83,6 +84,10 @@
             groupToPages(filteredItems);
         }
 
+        function rateMovie(rating) {
+
+        }
+
         ////////////////////////////////
         //Utility functions
         ////////////////////////////////
@@ -96,7 +101,7 @@
                 return haystack.toLowerCase().indexOf(needle.toLowerCase()) !== -1;
             }
             return false;
-        };
+        }
 
         function groupToPages(filteredItems) {
             bCtrl.pagedData = [];
