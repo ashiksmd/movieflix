@@ -1,0 +1,49 @@
+<div>
+    <nav>
+        <ul class="pager">
+            <li class="previous" ng-class="{'disabled': bCtrl.page == 0}">
+                <a ng-click="bCtrl.gotoPrev()"><span aria-hidden="true">&larr;</span> Prev</a>
+            </li>
+            <li class="next" ng-class="{'disabled': bCtrl.page == bCtrl.pagedData.length - 1}">
+                <a ng-click="bCtrl.gotoNext()">Next <span aria-hidden="true">&rarr;</span></a>
+            </li>
+        </ul>
+    </nav>
+    <div class="catalog">
+        <div ng-repeat="movie in bCtrl.pagedData[bCtrl.page]" class="movie">
+            <div class="poster">
+                <img ng-src="{{movie.Poster}}" alt="{{movie.Title}}" ng-click="bCtrl.showDetails(movie)"/>
+            </div>
+            <div>{{movie.Title}} ({{movie.Year}})</div>
+        </div>
+    </div>
+
+    <div class="movie-details alert alert-dismissible" ng-show="bCtrl.enableDetails">
+        <span class="glyphicon glyphicon-remove" ng-click="bCtrl.hideDetails()"></span>
+        <h2>{{bCtrl.selectedMovie.Title}} ({{bCtrl.selectedMovie.Year}})</h2>
+         <span class="starRating">
+            <input id="rating5" type="radio" name="rating" value="5" ng-model="bCtrl.selectedMovie.MovieFlixRating">
+            <label for="rating5">5</label>
+            <input id="rating4" type="radio" name="rating" value="4" ng-model="bCtrl.selectedMovie.MovieFlixRating">
+            <label for="rating4">4</label>
+            <input id="rating3" type="radio" name="rating" value="3" ng-model="bCtrl.selectedMovie.MovieFlixRating">
+            <label for="rating3">3</label>
+            <input id="rating2" type="radio" name="rating" value="2" ng-model="bCtrl.selectedMovie.MovieFlixRating">
+            <label for="rating2">2</label>
+            <input id="rating1" type="radio" name="rating" value="1" ng-model="bCtrl.selectedMovie.MovieFlixRating">
+            <label for="rating1">1</label>
+        </span>
+        <div>{{bCtrl.selectedMovie.Runtime}}</div>
+        <div>{{bCtrl.selectedMovie.Genre}}</div>
+        <div>Directed by: {{bCtrl.selectedMovie.Director}}</div>
+        <div>Starring {{bCtrl.selectedMovie.Actors}}</div>
+        <div>{{bCtrl.selectedMovie.Plot}}</div>
+        <div>MovieFlix Rating: {{bCtrl.selectedMovie.MovieFlixRating}}</div>
+        <div><a ng-href="http://www.imdb.com/title/{{bCtrl.selectedMovie.imdbID}}/">IMDb Rating: {{bCtrl.selectedMovie.imdbRating}}</a></div>
+        <div><a href="#/comments">Comments/Reviews</a></div>
+        <div class="admin-actions" ng-show="bCtrl.isAdmin">
+            <a ng-href="#/edit-movie/{{bCtrl.selectedMovie.imdbID}}" class="btn btn-default">Edit</a>
+            <a class="btn btn-default">Delete</a>
+        </div>
+    </div>
+</div>

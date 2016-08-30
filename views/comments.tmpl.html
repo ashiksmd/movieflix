@@ -1,0 +1,46 @@
+<div>
+    <div class="comments">
+        <h2>Reviews</h2>
+        <div class="user-comments">
+            <div ng-repeat="c in cCtrl.comments" class="comment">
+                <span class="starRating disabled">
+                    <input id="rating5{{$index}}" type="radio" name="rating{{$index}}" value="5" ng-model="c.rating" disabled>
+                    <label for="rating5{{$index}}">5</label>
+                    <input id="rating4{{$index}}" type="radio" name="rating{{$index}}" value="4" ng-model="c.rating" disabled>
+                    <label for="rating4{{$index}}">4</label>
+                    <input id="rating3{{$index}}" type="radio" name="rating{{$index}}" value="3" ng-model="c.rating" disabled>
+                    <label for="rating3{{$index}}">3</label>
+                    <input id="rating2{{$index}}" type="radio" name="rating{{$index}}" value="2" ng-model="c.rating" disabled>
+                    <label for="rating2{{$index}}">2</label>
+                    <input id="rating1{{$index}}" type="radio" name="rating{{$index}}" value="1" ng-model="c.rating" disabled>
+                    <label for="rating1{{$index}}">1</label>
+                </span>
+                <div>{{c.text}}</div>
+            </div>
+        </div>
+        <div class="new-comment">
+            <h3>Write a Review</h3>
+            <form>
+                <div>Rate this Title:</div>
+                <span class="starRating">
+                    <input id="rating5" type="radio" name="rating" value="5" >
+                    <label for="rating5">5</label>
+                    <input id="rating4" type="radio" name="rating" value="4" >
+                    <label for="rating4">4</label>
+                    <input id="rating3" type="radio" name="rating" value="3" >
+                    <label for="rating3">3</label>
+                    <input id="rating2" type="radio" name="rating" value="2" >
+                    <label for="rating2">2</label>
+                    <input id="rating1" type="radio" name="rating" value="1" >
+                    <label for="rating1">1</label>
+                </span>
+                <div>
+                    <textarea placeholder="Write your review here"></textarea>
+                    <input type="submit"/>
+                </div>
+            </form>
+
+        </div>
+    </div>
+
+</div>
